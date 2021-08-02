@@ -29,7 +29,7 @@ const QuestionCard: React.FC<Props> = ({
     </p>
     <p dangerouslySetInnerHTML={{ __html: question }} />
     <div>
-      {answers ? answers.map((answer) => (
+      {answers.map((answer) => (
         <ButtonWrapper
           key={answer}
           correct={userAnswer?.correctAnswer === answer}
@@ -43,7 +43,7 @@ const QuestionCard: React.FC<Props> = ({
             <span dangerouslySetInnerHTML={{ __html: answer }} />
           </button>
         </ButtonWrapper>
-      )): "Loading..."}
+      ))}
     </div>
   </Wrapper>
 );
