@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   max-width: 1100px;
   background: #ebfeff;
+  background-image: linear-gradient(180deg, #252525, #87f1ff);
   border-radius: 10px;
   border: 2px solid #0085a3;
   padding: 20px;
@@ -11,6 +12,7 @@ export const Wrapper = styled.div`
 
   p {
     font-size: 1rem;
+    color: #fff;
   }
 `;
 
